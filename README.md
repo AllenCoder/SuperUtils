@@ -17,23 +17,28 @@
 ```
 
 在app的build.gradle引入依赖
-1.
+
+## 1.
+
 ```
-	dependencies {
-	        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.1'
-	}
+dependencies {
+        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.1'
+}
 ```
-2.
+## 2.
+
 ```
-	dependencies {
-	         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.1'
-	}
+dependencies {
+         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.1'
+}
 ```
 
-3.
+## 3.
+
 ```
-	dependencies {
-	         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.1'
-	}
+dependencies {
+         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.1'
+}
+
 ```
 
