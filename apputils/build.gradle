@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -29,3 +30,4 @@ dependencies {
     compile ("com.android.support:appcompat-v7:${rootProject.ext.supportVersion}")
     testCompile 'junit:junit:4.12'
 }
+apply from:   '../uploadSource.gradle'
