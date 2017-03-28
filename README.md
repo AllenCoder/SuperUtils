@@ -8,12 +8,12 @@
 快速使用： 在工程目录下的 build.gradle 添加如下代码:
 
 ```
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
 在app的build.gradle引入依赖
