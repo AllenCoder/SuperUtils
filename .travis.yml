@@ -1,18 +1,29 @@
 language: android
-jdk: oraclejdk8
-
+sudo: false
 android:
   components:
     - tools
     - build-tools-25.0.2
-    - android-23
+    - platform-tools
+    - extra-android-m2repository
+    - extra-google-android-support
+    # The BuildTools version used by your project
+    #- build-tools-19.1.0
 
-before_cache:
-  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
-    - $HOME/.android/build-cache
+    # The SDK version used to compile your project
+    - android-16
+    - android-21
+    - android-22
+    - android-25
 
+    # Additional components
+
+    # Specify at least one system image,
+    # if you need to run emulator(s) during your tests
+    - sys-img-armeabi-v7a-android-16
+    - sys-img-armeabi-v7a-android-21
+    - sys-img-armeabi-v7a-android-22
+    - sys-img-armeabi-v7a-android-25
+jdk: oraclejdk8
+os:
+  - linux
