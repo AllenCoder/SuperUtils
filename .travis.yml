@@ -1,29 +1,54 @@
 language: android
-sudo: false
+
+sudo: required
+
+jdk:
+  - oraclejdk8
+
+env:
+  global:
+    - ANDROID_API_LEVEL=25
+    - ANDROID_BUILD_TOOLS_VERSION=25.0.0
+
 android:
   components:
     - tools
-    - build-tools-25.0.2
     - platform-tools
+    - build-tools-$ANDROID_BUILD_TOOLS_VERSION
+    - android-$ANDROID_API_LEVEL
+    - addon-google_apis-google-$ANDROID_API_LEVEL
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-google-google_play_services
     - extra-android-m2repository
-    - extra-google-android-support
-    # The BuildTools version used by your project
-    #- build-tools-19.1.0
+    - extra-android-support
+    - sys-img-armeabi-v7a-google_apis-21
+  licenses:
+    - '.+'
 
-    # The SDK version used to compile your project
-    - android-16
-    - android-21
-    - android-22
-    - android-25
+before_install:
+  - echo y | sudo apt-get update
+  - echo y | sudo apt-get install openjdk-7-jre
+  - export JAVA7_HOME=/usr/lib/jvm/java-7-oracle
+  - export JAVA8_HOME=/usr/lib/jvm/java-8-oracle
+  - export JAVA_HOME=$JAVA8_HOME
+  - chmod +x gradlew
 
-    # Additional components
+script:
+  - android list targets
 
-    # Specify at least one system image,
-    # if you need to run emulator(s) during your tests
-    - sys-img-armeabi-v7a-android-16
-    - sys-img-armeabi-v7a-android-21
-    - sys-img-armeabi-v7a-android-22
-    - sys-img-armeabi-v7a-android-25
-jdk: oraclejdk8
-os:
-  - linux
+  - echo no | android create avd --force -n testemulator -t "android-21" --abi armeabi-v7a
+  - echo 'vm.heapSize=512' >> ~/.android/avd/testemulator.ini
+  - echo 'hw.ramSize=1024' >> ~/.android/avd/testemulator.ini
+  - cat ~/.android/avd/testemulator.ini
+
+  - emulator -avd testemulator -no-skin -no-audio -no-window &
+  - android-wait-for-emulator
+
+  - adb shell input keyevent 82 &
+  - adb shell svc power stayon true
+  - adb shell settings put global window_animation_scale 0
+  - adb shell settings put global transition_animation_scale 0
+  - adb shell settings put global animator_duration_scale 0
+
+  - ./gradlew build
