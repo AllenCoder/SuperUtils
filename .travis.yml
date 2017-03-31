@@ -15,7 +15,13 @@ env:
   global:
     - secure: "mokP2uluF4Yeg7ZvhjVOoo6E5lXWWyhhqGMZ4EbZ3xbl8W/a6oObwoLkVhxaMpdFz597VfBdiC0wX+y9ri2HBY2g2CCf2B4FFNsPFzA9MAKchFwfeqd/Z5GxfZVvEdYdSSueIRpeNJnjVVxt3WApCtNn7wsu9j3P4AtD76KxGL0="
     - secure: "nfVaFnrXdHiPWjArMUFO9+5OX/jIKcUrue+xXDg1rNlVsevuGMC+DMBfOGgHBAITD1Vsp0XRWrvzVFntLoigZ4rMBbNvt0dBRPhlr49CqxIFwKw/kAcDqbNjvMpOvvghOqqNNW2HDzLvIiy2G93ZNz+p+DkcYTT8mi7d1UFhKqQ="
+  licenses:
+    - android-sdk-license-.+
 
+before_install:
+  - mkdir -p $ANDROID_HOME/licenses/ \
+  && echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > $ANDROID_HOME/licenses/android-sdk-license \
+  && echo "84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/android-sdk-preview-license
 branches:
   except:
     - gh-pages
