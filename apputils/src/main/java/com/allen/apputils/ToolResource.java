@@ -16,7 +16,7 @@ public class ToolResource {
 
     public ToolResource(Context mContext) {
         super();
-        ToolResource.mContext = mContext;
+        ToolResource.mContext = mContext.getApplicationContext();
     }
 
     private static final String TAG = ToolResource.class.getName();
