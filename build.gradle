@@ -46,5 +46,5 @@ ext {
     minSdkVersion = 14
     targetSdkVersion = 25
 
-//    supportVersion = "25.2.0"
+    supportVersion = "25.2.0"
 }
