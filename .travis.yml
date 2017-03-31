@@ -11,26 +11,21 @@ android:
 jdk:
   - oraclejdk8
 
-env:
-  global:
-    - secure: "mokP2uluF4Yeg7ZvhjVOoo6E5lXWWyhhqGMZ4EbZ3xbl8W/a6oObwoLkVhxaMpdFz597VfBdiC0wX+y9ri2HBY2g2CCf2B4FFNsPFzA9MAKchFwfeqd/Z5GxfZVvEdYdSSueIRpeNJnjVVxt3WApCtNn7wsu9j3P4AtD76KxGL0="
-    - secure: "nfVaFnrXdHiPWjArMUFO9+5OX/jIKcUrue+xXDg1rNlVsevuGMC+DMBfOGgHBAITD1Vsp0XRWrvzVFntLoigZ4rMBbNvt0dBRPhlr49CqxIFwKw/kAcDqbNjvMpOvvghOqqNNW2HDzLvIiy2G93ZNz+p+DkcYTT8mi7d1UFhKqQ="
-  licenses:
+
+licenses:
     - android-sdk-license-.+
 
-before_install:
-  - mkdir -p $ANDROID_HOME/licenses/ \
-  && echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > $ANDROID_HOME/licenses/android-sdk-license \
-  && echo "84831b9409646a918e30573bab4c9c91346d8abd" > $ANDROID_HOME/licenses/android-sdk-preview-license
-branches:
-  except:
-    - gh-pages
+before_script:
+  # Accept licenses
+  - echo $ANDROID_HOME
+  - mkdir $ANDROID_HOME/licenses
+  - echo 8933bad161af4178b1185d1a37fbf41ea5269c55 > $ANDROID_HOME/licenses/android-sdk-license
+  - echo 84831b9409646a918e30573bab4c9c91346d8abd > $ANDROID_HOME/licenses/android-sdk-preview-license
+  # Copy templates
+  - cp app/templates/google_maps_api.xml app/src/main/res/values/google_maps_api.xml
+  - cp app/templates/google-services.json app/google-services.json
+  # Create and start emulator, TODO: emulator doesn't work at the moment
+  #- echo no | android create avd --force -n test -t "android-"$EMULATOR_API_LEVEL --abi $ANDROID_ABI --tag $ANDROID_TAG
+  #- emulator -avd test -no-skin -no-audio -no-window &
+  #- android-wait-for-emulator
 
-notifications:
-  email: false
-
-sudo: false
-
-cache:
-  directories:
-    - $HOME/.m2
