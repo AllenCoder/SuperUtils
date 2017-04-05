@@ -37,13 +37,13 @@ allprojects {
 | DataCleanManager         | Android 应用内数据清除工具类                                              |    [DataCleanManager][10]  |     |
 | MLog          | Android Log打印工具类 支持行号 json打印 统一封装|    [MLog][11]  |     |
 | NetUtils              | Android 网络状态判断工具类，检测WiFi ，4G网络状态                                                 |    [NetUtils][12]  |     |
-| NumberUtil         |  金额格式化工具类（支持常用的保留指定位数的小数 和自动格式化处理）                                           |   [NumberUtil][12]   |     |
-| RegexUtils          |提供验证邮箱、手机号、电话号码、身份证号码、数字等方法|    [RegexUtils][13]  |     |
-| ScreenListener              | Android屏幕状态监听工具类（判断 是否处于锁屏，亮屏状态）                                                 |   [ScreenListener][14]   |     |
-| ScreenUtil         |  获取屏幕状态信息 （屏幕宽高 等信息）                                        |    [ScreenUtil][15]  |     |
-| StatusBarUtils          |状态栏处理工具类 ，支持沉浸式状态栏|    [StatusBarUtils][16]  |     |
-| ToolResource              | Android 获取资源工具类                                                 |  [ToolResource][17]    |     |
-| TouchEventUtil         |  Android Touch事件打印辅助工具类                                      |    [TouchEventUtil][18]  |     |
+| NumberUtil         |  金额格式化工具类（支持常用的保留指定位数的小数 和自动格式化处理）                                           |   [NumberUtil][13]   |     |
+| RegexUtils          |提供验证邮箱、手机号、电话号码、身份证号码、数字等方法|    [RegexUtils][14]  |     |
+| ScreenListener              | Android屏幕状态监听工具类（判断 是否处于锁屏，亮屏状态）                                                 |   [ScreenListener][15]   |     |
+| ScreenUtil         |  获取屏幕状态信息 （屏幕宽高 等信息）                                        |    [ScreenUtil][16]  |     |
+| StatusBarUtils          |状态栏处理工具类 ，支持沉浸式状态栏|    [StatusBarUtils][17]  |     |
+| ToolResource              | Android 获取资源工具类                                                 |  [ToolResource][18]    |     |
+| TouchEventUtil         |  Android Touch事件打印辅助工具类                                      |    [TouchEventUtil][19]  |     |
 
 ```
 dependencies {
@@ -52,6 +52,11 @@ dependencies {
 ```
 ### 2.Android 数据库处理工具类
 
+| Android 数据库处理工具类 |                          |     |     |
+| ------------------------ | ------------------------ | --- | --- |
+| Utils                    | Android 数据库导出到SD卡 |  [Utils][20]   |     |
+
+
 ```
 dependencies {
          compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.2'
@@ -59,6 +64,12 @@ dependencies {
 ```
 
 ### 3.Android 多媒体处理工具类
+
+| Android 多媒体工具类 |                            |     |     |
+| -------------------- | -------------------------- | --- | --- |
+| ImageTakerHelper     | 从相机或者相册取图片辅助类 |  [ImageTakerHelper][21]   |     |
+| Utils                |                            | [Utils][22]    |     |
+|                      |                            |     |     |
 
 ```
 dependencies {
@@ -87,23 +98,25 @@ dependencies {
 ```
 
 
-[1]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/AppManger.java
-[2]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/Arith.java
-[3]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/BitmapUtil.java
-[4]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/BtnClickUtils.java
-[5]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/CheckViewInRange.java
-[6]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DataCleanManager.java 
-[7]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DataUtil.java
-
-[8]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DateTimeUtil.java
-[9]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DigestUtils.java
-[10]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DataCleanManager.java
-[11]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/MLog.java
-[12]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/NetUtils.java
-[13]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/RegexUtils.java 
-[14]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ScreenListener.java
-
-[15]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ScreenUtil.java
-[16]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/StatusBarUtils.java
-[17]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ToolResource.java
-[18]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/TouchEventUtil.java
+  [1]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/AppManger.java
+  [2]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/Arith.java
+  [3]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/BitmapUtil.java
+  [4]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/BtnClickUtils.java
+  [5]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/CheckViewInRange.java
+  [6]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DataCleanManager.java
+  [7]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DataUtil.java
+  [8]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DateTimeUtil.java
+  [9]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DigestUtils.java
+  [10]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DataCleanManager.java
+  [11]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/MLog.java
+  [12]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/NetUtils.java
+  [13]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/NetUtils.java
+  [14]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/RegexUtils.java
+  [15]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ScreenListener.java
+  [16]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ScreenUtil.java
+  [17]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/StatusBarUtils.java
+  [18]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ToolResource.java
+  [19]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/TouchEventUtil.java
+  [20]: https://github.com/AllenCoder/SuperUtils/blob/master/dbutils/src/main/java/com/allen/dbutils/Utils.java
+  [21]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/ImageTakerHelper.java
+  [22]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/Utils.java
