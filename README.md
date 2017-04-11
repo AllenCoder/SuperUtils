@@ -21,6 +21,12 @@ allprojects {
 
 在app的build.gradle引入依赖
 
+```
+dependencies {
+        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.3'
+}
+```
+
 ### 1.Android 基础工具类
 
 | Android 基础工具类 |                                                                |     |     |
@@ -47,11 +53,7 @@ allprojects {
 | WeakRefHander         | 弱引用 handler 防止内存泄露                                     |    [WeakRefHander][23]  |     |
 | SecretUtils         |  3DES 加密/解密                                      |    [SecretUtils][24]  |     |
 
-```
-dependencies {
-        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.2'
-}
-```
+
 ### 2.Android 数据库处理工具类
 
 | Android 数据库处理工具类 |                          |     |     |
@@ -61,7 +63,7 @@ dependencies {
 
 ```
 dependencies {
-         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.2'
+         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.3'
 }
 ```
 
@@ -75,7 +77,7 @@ dependencies {
 
 ```
 dependencies {
-         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.2'
+         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.3'
 }
 
 ```
