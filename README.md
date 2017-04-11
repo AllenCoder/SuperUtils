@@ -44,6 +44,8 @@ allprojects {
 | StatusBarUtils          |状态栏处理工具类 ，支持沉浸式状态栏|    [StatusBarUtils][17]  |     |
 | ToolResource              | Android 获取资源工具类                                                 |  [ToolResource][18]    |     |
 | TouchEventUtil         |  Android Touch事件打印辅助工具类                                      |    [TouchEventUtil][19]  |     |
+| WeakRefHander         | 弱引用 handler 防止内存泄露                                     |    [WeakRefHander][23]  |     |
+| SecretUtils         |  3DES 加密/解密                                      |    [SecretUtils][24]  |     |
 
 ```
 dependencies {
@@ -120,3 +122,5 @@ dependencies {
   [20]: https://github.com/AllenCoder/SuperUtils/blob/master/dbutils/src/main/java/com/allen/dbutils/Utils.java
   [21]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/ImageTakerHelper.java
   [22]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/Utils.java
+  [23]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/WeakRefHander.java
+  [24]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/SecretUtils.java
