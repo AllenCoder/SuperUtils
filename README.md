@@ -23,7 +23,7 @@ allprojects {
 
 ```
 dependencies {
-        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.3'
+        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.4'
 }
 ```
 
@@ -51,6 +51,9 @@ dependencies {
 | TouchEventUtil         |  Android Touch事件打印辅助工具类                                      |    [TouchEventUtil][19]  |     |
 | WeakRefHander         | 弱引用 handler 防止内存泄露                                     |    [WeakRefHander][23]  |     |
 | SecretUtils         |  3DES 加密/解密                                      |    [SecretUtils][24]  |     |
+| ToastUtils         |  Toast工具类（需要Utils.init(context)）                                      |    [ToastUtils][25]  |     |
+| IOUtil         |  IOUtil （文件操作工具）                                      |    [IOUtil][26]  |     |
+
 
 
 ### 2.Android 数据库处理工具类
@@ -62,7 +65,7 @@ dependencies {
 
 ```
 dependencies {
-         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.3'
+         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.4'
 }
 ```
 
@@ -76,7 +79,7 @@ dependencies {
 
 ```
 dependencies {
-         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.3'
+         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.4'
 }
 
 ```
@@ -125,3 +128,5 @@ dependencies {
   [22]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/Utils.java
   [23]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/WeakRefHander.java
   [24]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/SecretUtils.java
+   [25]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/ToastUtils.java
+   [26]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/IOUtil.java
