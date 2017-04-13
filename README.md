@@ -40,7 +40,6 @@ dependencies {
 | DataUtil          |数据转换工具类 |   [DataUtil][7]   |     |
 | DateTimeUtil              | Android 格式化时间工具类                                                 |  [DateTimeUtil][8]    |     |
 | DigestUtils         |MD5加解密工具类                                           |    [DigestUtils][9]  |     |
-| DataCleanManager         | Android 应用内数据清除工具类                                              |    [DataCleanManager][10]  |     |
 | MLog          | Android Log打印工具类 支持行号 json打印 统一封装|    [MLog][11]  |     |
 | NetUtils              | Android 网络状态判断工具类，检测WiFi ，4G网络状态                                                 |    [NetUtils][12]  |     |
 | NumberUtil         |  金额格式化工具类（支持常用的保留指定位数的小数 和自动格式化处理）                                           |   [NumberUtil][13]   |     |
