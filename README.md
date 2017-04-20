@@ -126,7 +126,7 @@ dependencies {
   [20]: https://github.com/AllenCoder/SuperUtils/blob/master/dbutils/src/main/java/com/allen/dbutils/Utils.java
   [21]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/ImageTakerHelper.java
   [22]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/Utils.java
-  [23]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/WeakRefHander.java
-  [24]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/SecretUtils.java
-   [25]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/ToastUtils.java
-   [26]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/mediautil/IOUtil.java
+  [23]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/apputils/WeakRefHander.java
+  [24]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/apputils/SecretUtils.java
+   [25]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/apputils/ToastUtils.java
+   [26]: https://github.com/AllenCoder/SuperUtils/blob/master/mediautil/src/main/java/com/allen/apputils/IOUtil.java
