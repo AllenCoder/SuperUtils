@@ -116,7 +116,7 @@ dependencies {
   [10]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/DataCleanManager.java
   [11]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/MLog.java
   [12]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/NetUtils.java
-  [13]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/NetUtils.java
+  [13]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/NumberUtil.java
   [14]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/RegexUtils.java
   [15]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ScreenListener.java
   [16]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ScreenUtil.java
