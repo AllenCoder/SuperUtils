@@ -23,7 +23,7 @@ allprojects {
 
 ```
 dependencies {
-        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.4'
+        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.5'
 }
 ```
 
@@ -53,7 +53,7 @@ dependencies {
 | SecretUtils         |  3DES 加密/解密                                      |    [SecretUtils][24]  |     |
 | ToastUtils         |  Toast工具类（需要Utils.init(context)）                                      |    [ToastUtils][25]  |     |
 | IOUtil         |  IOUtil （文件操作工具）                                      |    [IOUtil][26]  |     |
-
+| PaintUtil         |  PaintUtil （测量字体大小和字体高度）                                      |    [PaintUtil][27]  |     |
 
 
 ### 2.Android 数据库处理工具类
@@ -65,7 +65,7 @@ dependencies {
 
 ```
 dependencies {
-         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.4'
+         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.5'
 }
 ```
 
@@ -79,7 +79,7 @@ dependencies {
 
 ```
 dependencies {
-         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.4'
+         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.5'
 }
 
 ```
@@ -130,3 +130,4 @@ dependencies {
   [24]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/SecretUtils.java
    [25]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/ToastUtils.java
    [26]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/IOUtil.java
+   [27]: https://github.com/AllenCoder/SuperUtils/blob/master/apputils/src/main/java/com/allen/apputils/PaintUtil.java
