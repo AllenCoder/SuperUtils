@@ -1,13 +1,12 @@
 
 
-##  Android工具类库 [![Build Status](https://travis-ci.org/AllenCoder/SuperUtils.svg?branch=master)](https://travis-ci.org/AllenCoder/SuperUtils) [![](https://jitpack.io/v/AllenCoder/SuperUtils.svg)](https://jitpack.io/#AllenCoder/SuperUtils)  [![API](https://img.shields.io/badge/API-14%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=14) [![Gradle Version](https://img.shields.io/badge/gradle-3.4-green.svg)](https://docs.gradle.org/current/release-notes) [![Licence](https://img.shields.io/badge/licence-Apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+##  Android tool library [![Build Status](https://travis-ci.org/AllenCoder/SuperUtils.svg?branch=master)](https://travis-ci.org/AllenCoder/SuperUtils) [![](https://jitpack.io/v/AllenCoder/SuperUtils.svg)](https://jitpack.io/#AllenCoder/SuperUtils)  [![API](https://img.shields.io/badge/API-14%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=14) [![Gradle Version](https://img.shields.io/badge/gradle-3.4-green.svg)](https://docs.gradle.org/current/release-notes) [![Licence](https://img.shields.io/badge/licence-Apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
   
-  
->囊括了一大部分Android应用开发过程当中常用的工具类。工具类来源整理自网络和自己编写。(正在不断收集和整理中)
+> Including a large part of the Android application development process commonly used tools. Tools source from the network and write their own. (Constantly collecting and sorting out)
 
 
 
-### 快速使用： 在工程目录下的 build.gradle 添加如下代码:
+### Quickly use: build.gradle in the project directory to add the following code:
 
 
 ```
@@ -20,7 +19,7 @@ allprojects {
 
 ```
 
-在app的build.gradle引入依赖
+### Introduced dependencies in the app's build.gradle
 
 ```
 dependencies {
@@ -28,40 +27,40 @@ dependencies {
 }
 ```
 
-### 1.Android 基础工具类
+### 1. .Android foundation tool class
 
-| Android 基础工具类 |                                                                |     |     |
+| Android Basic Tools class |                                                                |     |     |
 | ------------------ | -------------------------------------------------------------- | --- | --- |
-| AppManger          | 应用程序Activity管理工具类，用于Activity的管理和应用程序的退出 |  [AppManger][1]   |     |
-| Arith              | 精确计算工具类                                                 |   [Arith][2]   |     |
-| BitmapUtil         | Bitmap 处理工具类                                              |   [BitmapUtil][3]   |     |
-| BtnClickUtils          |Android 快速点击判断拦截工具类 | [BtnClickUtils][4]     |     |
-| CheckViewInRange              | View 区域范围判断工具类                                                 |  [CheckViewInRange][5]    |     |
-| DataCleanManager         | Android 应用内数据清除工具类                                              |    [DataCleanManager][6]  |     |
-| DataUtil          |数据转换工具类 |   [DataUtil][7]   |     |
-| DateTimeUtil              | Android 格式化时间工具类                                                 |  [DateTimeUtil][8]    |     |
-| DigestUtils         |MD5加解密工具类                                           |    [DigestUtils][9]  |     |
-| MLog          | Android Log打印工具类 支持行号 json打印 统一封装|    [MLog][11]  |     |
-| NetUtils              | Android 网络状态判断工具类，检测WiFi ，4G网络状态                                                 |    [NetUtils][12]  |     |
-| NumberUtil         |  金额格式化工具类（支持常用的保留指定位数的小数 和自动格式化处理）                                           |   [NumberUtil][13]   |     |
-| RegexUtils          |提供验证邮箱、手机号、电话号码、身份证号码、数字等方法|    [RegexUtils][14]  |     |
-| ScreenListener              | Android屏幕状态监听工具类（判断 是否处于锁屏，亮屏状态）                                                 |   [ScreenListener][15]   |     |
-| ScreenUtil         |  获取屏幕状态信息 （屏幕宽高 等信息）                                        |    [ScreenUtil][16]  |     |
-| StatusBarUtils          |状态栏处理工具类 ，支持沉浸式状态栏|    [StatusBarUtils][17]  |     |
-| ToolResource              | Android 获取资源工具类                                                 |  [ToolResource][18]    |     |
-| TouchEventUtil         |  Android Touch事件打印辅助工具类                                      |    [TouchEventUtil][19]  |     |
-| WeakRefHander         | 弱引用 handler 防止内存泄露                                     |    [WeakRefHander][23]  |     |
-| SecretUtils         |  3DES 加密/解密                                      |    [SecretUtils][24]  |     |
-| ToastUtils         |  Toast工具类（需要Utils.init(context)）                                      |    [ToastUtils][25]  |     |
-| IOUtil         |  IOUtil （文件操作工具）                                      |    [IOUtil][26]  |     |
-| PaintUtil         |  PaintUtil （测量字体大小和字体高度）                                      |    [PaintUtil][27]  |     |
+| AppManger          | The application Activity management tool class, for the management of the activity and the exit of the application |  [AppManger][1]   |     |
+| Arith              | Precise calculation tool class                                                |   [Arith][2]   |     |
+| BitmapUtil         | Bitmap processing tool class                                              |   [BitmapUtil][3]   |     |
+| BtnClickUtils          | Android quick click to determine the interceptor class | [BtnClickUtils][4]     |     |
+| CheckViewInRange              | View area range judgment tool class                                                 |  [CheckViewInRange][5]    |     |
+| DataCleanManager         |  Android in-app data removal tool class                                              |    [DataCleanManager][6]  |     |
+| DataUtil          | Data conversion tool class |   [DataUtil][7]   |     |
+| DateTimeUtil              | Android formatting time tool class                                                |  [DateTimeUtil][8]    |     |
+| DigestUtils         |MD5 encryption and decryption tools category                                   |    [DigestUtils][9]  |     |
+| MLog          | Android Log print tool class support line number json print uniform package |    [MLog][11]  |     |
+| NetUtils              | Android network state judgment tool class, detection WiFi, 4G network status）                                              |    [NetUtils][12]  |     |
+| NumberUtil         |       Amount formatting tool class (supports the usual number of decimal places and automatic formatting)                                      |   [NumberUtil][13]   |     |
+| RegexUtils          | Provide authentication mailbox, mobile phone number, telephone number, ID number, number and other methods|    [RegexUtils][14]  |     |
+| ScreenListener              | Android screen status monitor tool class (to determine whether the lock screen, bright screen state)                                                 |   [ScreenListener][15]   |     |
+| ScreenUtil         |  Get screen status information (screen width and height information)                                        |    [ScreenUtil][16]  |     |
+| StatusBarUtils          |Status bar processing tool class, support immersive status bar |    [StatusBarUtils][17]  |     |
+| ToolResource              |Android Get Resource Tools class                                         |  [ToolResource][18]    |     |
+| TouchEventUtil         |  Android Touch Event Print Assistant                                      |    [TouchEventUtil][19]  |     |
+| WeakRefHander         | Weak reference handler to prevent memory leaks                                     |    [WeakRefHander][23]  |     |
+| SecretUtils         |  3DES encryption / decryption                                    |    [SecretUtils][24]  |     |
+| ToastUtils         |  Toast tool class (requires Utils.init (context))                                      |    [ToastUtils][25]  |     |
+| IOUtil         |  IOUtil (File Operations Tool)                                      |    [IOUtil][26]  |     |
+| PaintUtil         |  PaintUtil (measure font size and font height)                                     |    [PaintUtil][27]  |     |
 
 
-### 2.Android 数据库处理工具类
+### 2.Android database processing tool class
 
-| Android 数据库处理工具类 |                          |     |     |
+| Android database processing tool class |                          |     |     |
 | ------------------------ | ------------------------ | --- | --- |
-| Utils                    | Android 数据库导出到SD卡 |  [Utils][20]   |     |
+| Utils                    |The Android database is exported to the SD card |  [Utils][20]   |     |
 
 
 ```
@@ -70,11 +69,11 @@ dependencies {
 }
 ```
 
-### 3.Android 多媒体处理工具类
+### 3.Antroid multimedia processing tool class
 
-| Android 多媒体工具类 |                            |     |     |
+| Android multimedia tools category |                            |     |     |
 | -------------------- | -------------------------- | --- | --- |
-| ImageTakerHelper     | 从相机或者相册取图片辅助类 |  [ImageTakerHelper][21]   |     |
+| ImageTakerHelper     | From the camera or album to take the picture auxiliary class |  [ImageTakerHelper][21]   |     |
 | Utils                |                            | [Utils][22]    |     |
 |                      |                            |     |     |
 
