@@ -4,7 +4,7 @@
   
 > Including a large part of the Android application development process commonly used tools. Tools source from the network and write their own. (Constantly collecting and sorting out)
 
-
+(中文文档)[https://github.com/AllenCoder/SuperUtils/blob/master/README%20-%20cn.md]
 
 ### Quickly use: build.gradle in the project directory to add the following code:
 
