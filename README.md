@@ -23,7 +23,7 @@ allprojects {
 
 ```
 dependencies {
-        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.5'
+        compile 'com.github.AllenCoder.SuperUtils:apputils:1.0.6'
 }
 ```
 
@@ -65,7 +65,7 @@ dependencies {
 
 ```
 dependencies {
-         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.5'
+         compile 'com.github.AllenCoder.SuperUtils:dbutils:1.0.6'
 }
 ```
 
@@ -79,7 +79,7 @@ dependencies {
 
 ```
 dependencies {
-         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.5'
+         compile 'com.github.AllenCoder.SuperUtils:mediautil:1.0.6'
 }
 
 ```
