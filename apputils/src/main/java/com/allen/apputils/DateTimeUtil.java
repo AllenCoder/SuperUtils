@@ -18,6 +18,7 @@ package com.allen.apputils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -36,7 +37,7 @@ public class DateTimeUtil {
     private static final String DATE_Calendar = "yyyyMMdd";
     private static final String DATE_TIME_MILL = "yyyy-MM-dd HH:mm:ss";
     private static final String DATE_TIME_MILL_HOUR_MIN_MILL = "HH:mm:ss";
-    private static final String T_HOUR= "yyyy-MM-dd'T'HH:mm:ss";
+    private static final String T_HOUR = "yyyy-MM-dd'T'HH:mm:ss";
 
     /**
      * 获取期限名称
@@ -108,7 +109,6 @@ public class DateTimeUtil {
     }
 
 
-
     /**
      * 格式化时间（HH:mm:mm）
      *
@@ -138,12 +138,13 @@ public class DateTimeUtil {
      * @param dateTime
      * @return
      */
-    
+
     public static String formatDateTimeMill(long dateTime) {
         Date date = new Date(dateTime);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_TIME_MILL);
         return simpleDateFormat.format(date);
     }
+
     /**
      * 格式化时间
      *
@@ -162,6 +163,7 @@ public class DateTimeUtil {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_TIME_MILL);
         return simpleDateFormat.format(date);
     }
+
     public static String getCalendarTime() {
         Date date = new Date(System.currentTimeMillis());
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_Calendar);
@@ -171,6 +173,7 @@ public class DateTimeUtil {
     /**
      * 输入yyyy-MM-dd'T'HH:mm:ss
      * 输出: HH:mm
+     *
      * @param time
      * @return
      */
@@ -180,13 +183,15 @@ public class DateTimeUtil {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_TIME_HOUR);
         return simpleDateFormat.format(date);
     }
+
     /**
      * 返回时间戳
+     *
      * @param Time
      * @return
      */
     public static long getTimeMill(String Time) throws ParseException {
-        SimpleDateFormat format =  new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss" );
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 
         Date date = format.parse(Time);
@@ -195,5 +200,33 @@ public class DateTimeUtil {
         return date.getTime();
     }
 
+    /**
+     * 获取 时间间隔 天数
+     *
+     * @param beginDate
+     * @param endDate
+     * @return
+     */
+    public static int getTimeDistance(Date beginDate, Date endDate) {
+        Calendar beginCalendar = Calendar.getInstance();
+        beginCalendar.setTime(beginDate);
+        Calendar endCalendar = Calendar.getInstance();
+        endCalendar.setTime(endDate);
+        long beginTime = beginCalendar.getTime().getTime();
+        long endTime = endCalendar.getTime().getTime();
+        //先算出两时间的毫秒数之差大于一天的天数
+        int betweenDays = (int) ((endTime - beginTime) / (1000 * 60 * 60 * 24));
+        //使endCalendar减去这些天数，将问题转换为两时间的毫秒数之差不足一天的情况
+        endCalendar.add(Calendar.DAY_OF_MONTH, -betweenDays);
+        endCalendar.add(Calendar.DAY_OF_MONTH, -1);//再使endCalendar减去1天
+        //比较两日期的DAY_OF_MONTH是否相等
+        if (beginCalendar.get(Calendar.DAY_OF_MONTH) == endCalendar.get(Calendar.DAY_OF_MONTH)) {
+            //相等说明确实跨天了
+            return betweenDays + 1;
+        } else {
+            //不相等说明确实未跨天
+            return betweenDays;
+        }
+    }
 
 }
