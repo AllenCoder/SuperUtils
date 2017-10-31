@@ -17,6 +17,10 @@
 package com.allen.apputils;
 
 
+import android.text.InputFilter;
+import android.text.Spanned;
+import android.widget.EditText;
+
 import java.util.regex.Pattern;
 
 /**
@@ -38,6 +42,25 @@ public final class RegexUtils {
         // "(\d{3})\d{4}(\d{4})", "$1****$2"的这个意思就是用括号，
         // 分为(前3个数字)中间4个数字(最后4个数字)替换为(第一组数值，保持不变$1)(中间为*)(第二组数值，保持不变$2)
         return phone.replaceAll("(\\d{3})\\d{4}(\\d{4})", "$1****$2");
+    }
+
+    /**
+     * 设置输入的内容只能位字母和数字
+     * @param edit
+     */
+    public static void setInputLetterOrDigit(EditText edit) {
+        InputFilter filter = new InputFilter() {
+            @Override
+            public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+                for (int i = start; i < end; i++) {
+                    if (!Character.isLetterOrDigit(source.charAt(i))) {
+                        return "";
+                    }
+                }
+                return null;
+            }
+        };
+        edit.setFilters(new InputFilter[]{filter});
     }
 
     /**
