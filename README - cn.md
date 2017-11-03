@@ -1,6 +1,6 @@
 
 
-##  Android工具类库 [![Build Status](https://travis-ci.org/AllenCoder/SuperUtils.svg?branch=master)](https://travis-ci.org/AllenCoder/SuperUtils) [![](https://jitpack.io/v/AllenCoder/SuperUtils.svg)](https://jitpack.io/#AllenCoder/SuperUtils)  [![API](https://img.shields.io/badge/API-14%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=14) [![Gradle Version](https://img.shields.io/badge/gradle-4.1-green.svg)](https://docs.gradle.org/current/release-notes) [![Licence](https://img.shields.io/badge/licence-Apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+##  Android工具类库 [![Build Status](https://travis-ci.org/AllenCoder/SuperUtils.svg?branch=master)](https://travis-ci.org/AllenCoder/SuperUtils) [![](https://jitpack.io/v/AllenCoder/SuperUtils.svg)](https://jitpack.io/#AllenCoder/SuperUtils)  [![API](https://img.shields.io/badge/API-14%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=14) [![Gradle Version](https://img.shields.io/badge/gradle-4.1-green.svg)](https://docs.gradle.org/current/release-notes)[![CircleCI](https://circleci.com/gh/AllenCoder/SuperUtils/tree/master.svg?style=svg)](https://circleci.com/gh/AllenCoder/SuperUtils/tree/master) [![Licence](https://img.shields.io/badge/licence-Apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
   
 >囊括了一大部分Android应用开发过程当中常用的工具类。工具类来源整理自网络和自己编写。(正在不断收集和整理中)
 
